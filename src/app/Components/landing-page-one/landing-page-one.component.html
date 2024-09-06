@@ -1,0 +1,70 @@
+<main class="main-content">
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">It's easy!</h1>
+        <p class="hero-description">
+          Got a larger tax bill than you can afford? Split your tax bill into
+          <span class="highlight">72 manageable</span>
+          monthly payments with a payment plan.
+        </p>
+        <a href="#" class="cta-button">Get started NOW!</a>
+        <div class="progress-indicators">
+          <div class="progress-bar"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+      </div>
+      <section class="calculator-section">
+        <div class="calculator-container">
+          <h2 class="calculator-title">It's easy! Tell us how much you owe and how much you can pay</h2>
+          <p class="calculator-subtitle">HOW MUCH DO YOU OWE?</p>
+          <form (ngSubmit)="onSubmit()" class="calculator-form">
+            <div class="form-group">
+              <label for="taxOwed" class="visually-hidden">Enter the amount you owe</label>
+              <input
+                type="number"
+                id="taxOwed"
+                name="taxOwed"
+                placeholder="$0.00"
+                class="form-input"
+                aria-label="Enter the amount you owe"
+              />
+            </div>
+            <button (click)="nextStep()" class="submit-button">Tell Me If I Qualify</button>
+          </form>
+        </div>
+      </section>
+    </section>
+  
+  
+  
+    <section class="faq-section">
+      <h2 class="faq-title">General <span class="highlight">FAQs</span></h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">Lorem Ipsum is simply dummy text of the printing</summary>
+          <p class="faq-answer">
+            Amet viverra egestas ut sit posuere duis augue non. Euismod laoreet neque fermentum pulvinar metus. Ridiculus dui pharetra volutpat elit lectus neque porttitor amet eu. Aliquam nisi magna feugiat pellentesque vitae elementum. Faucibus duis vitae maecenas fames fermentum suspendisse ultrices cras.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Lorem Ipsum is simply dummy text of the printing</summary>
+          <p class="faq-answer">
+            Amet viverra egestas ut sit posuere duis augue non. Euismod laoreet neque fermentum pulvinar metus. Ridiculus dui pharetra volutpat elit lectus neque porttitor amet eu. Aliquam nisi magna feugiat pellentesque vitae elementum. Faucibus duis vitae maecenas fames fermentum suspendisse ultrices cras.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Lorem Ipsum is simply dummy text of the printing</summary>
+          <p class="faq-answer">
+            Amet viverra egestas ut sit posuere duis augue non. Euismod laoreet neque fermentum pulvinar metus. Ridiculus dui pharetra volutpat elit lectus neque porttitor amet eu. Aliquam nisi magna feugiat pellentesque vitae elementum. Faucibus duis vitae maecenas fames fermentum suspendisse ultrices cras.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Lorem Ipsum is simply dummy text of the printing</summary>
+          <p class="faq-answer">
+            Amet viverra egestas ut sit posuere duis augue non. Euismod laoreet neque fermentum pulvinar metus. Ridiculus dui pharetra volutpat elit lectus neque porttitor amet eu. Aliquam nisi magna feugiat pellentesque vitae elementum. Faucibus duis vitae maecenas fames fermentum suspendisse ultrices cras.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main> 
