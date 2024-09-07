@@ -1,184 +1,170 @@
 .footer {
-    background-color: #001f3f;
-    padding: 50px 120px;
-    font-family: Roboto, sans-serif;
-    color: #cfd3d7;
+  background-color: #001f3f;
+  padding: 50px 120px;
+  font-family: Roboto, sans-serif;
+  color: #cfd3d7;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info {
+  width: 240px;
+}
+
+.logo {
+  font-size: 20px;
+  color: #3a86ff;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.company-description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 33px;
+}
+
+// .footer-nav {
+//   display: flex;
+//   gap: 37px;
+// }
+
+.nav-column {
+  width: 240px;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #cfd3d7;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.nav-list li+li {
+  margin-top: 8px;
+}
+
+.newsletter {
+  width: 240px;
+}
+
+.newsletter-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 26px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input {
+  border: 1px solid #387ae7;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 16px 12px;
+  font-size: 16px;
+  color: #77808b;
+  margin-bottom: 16px;
+}
+
+.subscribe-button {
+  align-self: flex-start;
+  background-color: #0057ff;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+}
+
+.divider {
+  padding: 10px 0;
+}
+
+.divider-image {
+  width: 100%;
+  height: 1px;
+  object-fit: contain;
+}
+
+.copyright-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px 100px;
+  margin-top: 44px;
+}
+
+.copyright {
+  min-width: 240px;
+  margin: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-style: normal;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media screen and (max-width: 744px) {
+  .footer{
+    padding: 50px 70px;
   }
-  
   .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 37px;
-  }
-  
-  .company-info {
-    width: 240px;
-  }
-  
-  .logo {
-    font-size: 20px;
-    color: #3a86ff;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 0;
-  }
-  
-  .company-description {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 33px;
-  }
-  
-  .footer-nav {
-    display: flex;
-    gap: 37px;
-  }
-  
-  .nav-column {
-    width: 240px;
-  }
-  
-  .nav-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 16px;
-  }
-  
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-link {
-    color: #cfd3d7;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  
-  .nav-list li + li {
-    margin-top: 8px;
-  }
-  
-  .newsletter {
-    width: 240px;
-  }
-  
-  .newsletter-title {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 0 0 26px;
-  }
-  
-  .newsletter-form {
     display: flex;
     flex-direction: column;
   }
-  
-  .email-input {
-    border: 1px solid #387ae7;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 16px 12px;
-    font-size: 16px;
-    color: #77808b;
-    margin-bottom: 16px;
-  }
-  
-  .subscribe-button {
-    align-self: flex-start;
-    background-color: #0057ff;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 12px 24px;
-    cursor: pointer;
-  }
-  
-  .footer-bottom {
-    margin-top: 10px;
-  }
-  
-  .divider {
-    padding: 10px 0;
-  }
-  
-  .divider-image {
-    width: 100%;
-    height: 1px;
-    object-fit: contain;
-  }
-  
-  .copyright-contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px 100px;
-    margin-top: 44px;
-  }
-  
-  .copyright {
-    min-width: 240px;
-    margin: 0;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    font-style: normal;
-  }
-  
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .contact-icon {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-  
-  @media (max-width: 991px) {
-    .footer {
-      padding: 0 20px;
-    }
-  
-    .footer-content,
-    .copyright-contact {
-      max-width: 100%;
-    }
-  
-    .copyright-contact {
-      margin-top: 40px;
-    }
-  
-    .email-input {
-      padding-right: 20px;
-    }
-  
-    .subscribe-button {
-      padding: 12px 20px;
-    }
-  }
+}
