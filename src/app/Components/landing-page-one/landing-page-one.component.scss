@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 :host {
     display: contents;
   }
 
   .main-content {
-    max-width: 1440px;
     margin: 0 auto;
-    padding: 100px 36px;
+    padding: 100px 0px;
+    width: 100%;
   }
 
   .hero-section {
@@ -13,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--blue-100, #cdf);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 80px;
   }
 
@@ -24,7 +26,7 @@
   .hero-title {
     color: var(--blue, #0057ff);
     text-transform: uppercase;
-    font: 700 50px/1.2 Playfair Display, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 700 50px/1.2 "Playfair Display", -apple-system, Roboto, Helvetica, sans-serif;
   }
 
   .hero-description {
@@ -92,7 +94,7 @@
 
   .calculator-title {
     color: var(--dark-grey, #4a4a4a);
-    font: 700 30px Playfair Display, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 700 30px "Playfair Display", -apple-system, Roboto, Helvetica, sans-serif;
   }
 
   .calculator-subtitle {
@@ -139,7 +141,7 @@
   }
 
   .faq-title {
-    font: 700 50px/1.8 Playfair Display, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 700 50px/1.8 "Playfair Display", -apple-system, Roboto, Helvetica, sans-serif;
   }
 
   .faq-list {
