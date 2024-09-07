@@ -165,13 +165,13 @@
   }
 
   .faq-question::after {
-    content: '+';
+    content: url('../landing-page-one/chevron_down.png'); /* Replace with the actual path to your chevron image */
     float: right;
     margin: 10px;
   }
 
   .faq-item[open] .faq-question::after {
-    content: '^';
+    content: url('../landing-page-one/chevron_up.png'); /* Replace with the actual path to your chevron image */
     margin: 10px;
   }
 

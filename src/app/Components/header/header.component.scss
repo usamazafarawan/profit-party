@@ -89,3 +89,36 @@
     font: 500 14px Inter, sans-serif;
    }
   }
+
+  .menu-button {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--white, #fff);
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  /* Hide menu items by default on small screens */
+  .navbar-menu {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 712px) {
+    .navbar-menu {
+      display: none; /* Hide menu items by default */
+      flex-direction: column;
+      gap: 7px;
+    }
+  
+    .navbar-menu.show {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  
+    .menu-button {
+      display: block; /* Show menu button */
+    }
+  }

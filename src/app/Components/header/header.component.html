@@ -1,15 +1,16 @@
 <header class="navbar-logo-left">
-    <nav class="navbar-container">
-      <div class="navbar-content">
-        <div class="navbar-brand">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/75a04350e2a70c85a4943ae70fa1be7fe93b9777fa3ca1b1f2d7f7c3693b39e5?placeholderIfAbsent=true&apiKey=95babe95a96b4909a007c85c9bd8c3a8" alt="Company logo" class="brand-logo">
-        </div>
-        <ul class="navbar-menu">
-          <li><a href="#" class="navbar-link">Sales Message</a></li>
-          <li><a href="#" class="navbar-link">Interactive App</a></li> 
-          <li><a href="#" class="navbar-link">FAQs</a></li>
-          <li><button class="navbar-cta">GET STARTED</button></li>
-        </ul>
+  <nav class="navbar-container">
+    <div class="navbar-content">
+      <div class="navbar-brand">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/75a04350e2a70c85a4943ae70fa1be7fe93b9777fa3ca1b1f2d7f7c3693b39e5?placeholderIfAbsent=true&apiKey=95babe95a96b4909a007c85c9bd8c3a8" alt="Company logo" class="brand-logo">
       </div>
-    </nav>
-  </header>
+      <button class="menu-button" (click)="toggleMenu()">☰</button>
+      <ul class="navbar-menu" [ngClass]="{'show': isMenuOpen}">
+        <li><a href="#" class="navbar-link">Sales Message</a></li>
+        <li><a href="#" class="navbar-link">Interactive App</a></li> 
+        <li><a href="#" class="navbar-link">FAQs</a></li>
+        <li><button class="navbar-cta">GET STARTED</button></li>
+      </ul>
+    </div>
+  </nav>
+</header>
