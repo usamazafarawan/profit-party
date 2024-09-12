@@ -20,6 +20,7 @@
   }
 
   .hero-content {
+    width: 100%;
     max-width: 587px;
   }
 
@@ -27,6 +28,10 @@
     color: var(--blue, #0057ff);
     text-transform: uppercase;
     font: 700 50px/1.2 "Playfair Display", -apple-system, Roboto, Helvetica, sans-serif;
+    span{
+      font: 500 40px/1.2 "Playfair Display", -apple-system, Roboto, Helvetica, sans-serif;
+
+    }
   }
 
   .hero-description {
@@ -50,31 +55,29 @@
     margin-top: 40px;
   }
 
-  // .progress-indicators {
-  //   display: flex;
-  //   align-items: center;
-  //   gap: 11px;
-  //   margin-top: 40px;
-  // }
-
   .progress-bar {
     width: 55px;
     height: 10px;
     background-color: rgba(0, 87, 255, 1);
     border-radius: 58px;
   }
+  .carousel-indicators{
+    position: relative;
+    margin: 0 !important;
+    justify-content: flex-start;
+    bottom: -15px !important;
+    display: flex;
+    align-items: center;
+
+  }
   .carousel-indicators .active {
     width: 55px;
     height: 10px;
     background-color: rgba(0, 87, 255, 1);
-    border-radius: 58px;
+    border: 0px;
+    border-radius: 14px;
   }
-  .carousel-indicators li{
-    // width: 10px;
-    // height: 10px;
-    // background-color: rgba(115, 133, 151, 1);
-    // border-radius: 50%;
-  }
+
   .progress-dot {
     width: 10px;
     height: 10px;
@@ -196,7 +199,7 @@
   }
   .hero-main{
     max-width: 700px;
-    max-height: 336px;
+    max-height: 400px;
   }
 
   @media screen and (max-width: 1000px) {
@@ -217,7 +220,9 @@
       .hero-content {
         max-width: 400px;
       }
-
+      .hero-section{
+        height: 650px;
+      }
       .calculator-container {
         max-width: 610px;
       }
@@ -232,5 +237,15 @@
     }
     .calculator-title{
       font-size: 24px;
+    }
+    .hero-main{
+      max-height: 500px !important;
+      height: 450px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .hero-main {
+      max-height: 700px !important;
+      height: 550px;
     }
   }
